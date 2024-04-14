@@ -1,0 +1,152 @@
+@use 'globals/_index.scss';
+
+$colr-black: #000000;
+$colr-white: #FFFFFF;
+
+/* nav */
+.header {
+  position: sticky;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: auto;
+  background: $colr-black;
+  padding:1.2em 0;
+  width: 100%;
+  z-index: 20;
+
+  &__content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    width: min(90%, 1200px);
+
+  }
+
+  &__logo {
+    font-size: 1.8em;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+  &__nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+  }
+
+  &__sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  }
+
+  .mobile__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:.5em 0;
+    background: #222222;
+  }
+
+  /* hero */
+  .hero {
+    padding: 7em 2em;
+    background: $colr-black;
+
+    &__content {
+      text-align: center;
+      color: $colr-white;
+      width: min(100%, 1000px);
+      margin-inline: auto;
+
+    }
+
+    & h1 {
+      font-size: 4.875em;
+    }
+
+    & span {
+      font-size: 72px;
+      background: linear-gradient(90deg, #dec880, #fff 27%, #ff3980 57%, #827ded 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    & p {
+      font-size: 1.125em;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      // max-width: 670px;
+      // margin-inline:auto;
+      color: lightgrey;
+      letter-spacing: 1px;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 24px;
+    }
+
+    &__content-btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      margin-top:4em;    
+    }
+
+    &__content-btn2 {
+      padding: .5em 1.3em;
+      border-radius: 4px;
+      border:2px solid #fff;
+      // background-image: linear-gradient(90deg, #dec880, #fff 19%, #ff347d 51%, #827ded);
+    }
+
+    &__content-dashboard {
+      position: relative;
+      width: min(100%, 1600px);
+      margin-inline: auto;
+      padding: 4em;
+      margin-top: 2em;
+    }
+
+    &__content-img1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30%;
+      border-radius: 7px;
+    }
+    &__content-img2 {
+      width: 100%;
+      border-radius: 7px;
+    }
+    &__content-img3 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 40%;
+      border-radius: 7px;
+    }
+
+    &__content-icons {
+      margin-top: 3em;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1em;
+      // border:2px solid lightgrey;
+    }
+
+    &__content-icon {
+      padding: 1em;
+      // border:2px solid dodgerblue;
+    }
+  }
