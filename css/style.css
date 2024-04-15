@@ -16,6 +16,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
   background: lightgrey;
   padding: 0;
   margin: 0;
@@ -32,7 +33,7 @@ a {
 
 /* nav */
 .header {
-  position: sticky;
+  position: fixed;
   left: 0%;
   right: 0%;
   top: 0%;
@@ -47,7 +48,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-inline: auto;
-  width: min(90%, 1200px);
+  width: min(90%, 1444px);
 }
 .header__logo {
   font-size: 1.8em;
@@ -154,6 +155,149 @@ a {
 }
 .hero__content-icon {
   padding: 1em;
+}
+
+/* layers */
+.layers {
+  text-align: center;
+  padding: 4em;
+  background: #000000;
+}
+
+.layers__title h1 {
+  font-size: 3.1em;
+}
+.layers__title p {
+  padding-top: 0.5em;
+  font-size: 1.2em;
+}
+
+.layers__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: min(90%, 1444px);
+  margin-inline: auto;
+  text-align: left;
+  margin-top: 8em;
+}
+
+.layers__content-left {
+  text-align: left;
+  width: 50%;
+}
+.layers__content-left h2 {
+  font-size: 2.5em;
+  margin: 0.5em 0 0.5em 0;
+}
+.layers__content-left p {
+  font-size: 1.2em;
+}
+
+.layers__content-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 4em;
+}
+.layers__content-list ul {
+  padding-left: 0;
+}
+.layers__content-list img {
+  width: 24px;
+}
+
+.layers__content-split {
+  display: flex;
+  padding: 0.5em 0;
+}
+
+.layers__content-right {
+  width: 50%;
+}
+.layers__content-right img {
+  width: 100%;
+}
+
+/* Platform */
+.platform {
+  text-align: center;
+  padding: 4em;
+  background: #000000;
+}
+.platform__title h2 {
+  font-size: 3.1em;
+}
+.platform__title p {
+  padding-top: 0.5em;
+  font-size: 1.2em;
+}
+
+.platform__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: min(90%, 1444px);
+  margin-inline: auto;
+  text-align: left;
+  margin-top: 8em;
+}
+
+.platform__content-left {
+  text-align: left;
+  width: 40%;
+}
+.platform__content-left h2 {
+  font-size: 2.5em;
+  margin: 0.5em 0 0.5em 0;
+}
+.platform__content-left p {
+  font-size: 1.2em;
+}
+
+.platform__content-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 4em;
+}
+.platform__content-list ul {
+  padding-left: 0;
+}
+.platform__content-list img {
+  width: 24px;
+}
+
+.platform__content-split {
+  display: flex;
+  padding: 0.5em 0;
+}
+
+.platform__content-right {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+.platform__content-right img {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  border-radius: 21px;
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  overflow: hidden;
+}
+.platform__content-right-image__01 {
+  z-index: 2;
+  margin-top: -31px;
+}
+.platform__content-right-image__02 {
+  z-index: 1;
+}
+.platform__content-right-image__03 {
+  bottom: 0%;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
