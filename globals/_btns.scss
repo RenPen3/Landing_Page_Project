@@ -1,12 +1,17 @@
-$colr-black: #000000;
-
-.btns {
-  background: #FFFFFF;
-  color: $colr-black;
-  padding:.6em 1.5em;
+@mixin btn($clr: #000000, $bg: #FFFFFF) {
+  cursor:pointer;
+  background: $bg;
+  color: $clr;
+  border: 2px solid #FFFFFF;
   border-radius: 7px;
+  padding: 0.5em 1.5em;
+  transition: all .4s ease-in-out;
 }
 
-.btns:hover {
-  background: #eaeaea;
+.btns {
+  @include btn;
+
+  &:hover {
+    @include btn($bg: #e6e5e5)
+  }
 }

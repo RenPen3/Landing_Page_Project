@@ -1,5 +1,5 @@
-$colr-black: #000000;
-$colr-white: #FFFFFF;
+// $colr-black: #000000;
+// $colr-white: #FFFFFF;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -8,7 +8,7 @@ $colr-white: #FFFFFF;
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: $colr-white;
+  color: #FFFFFF;
   background:lightgrey;
   padding: 0;
   margin: 0;
@@ -19,6 +19,16 @@ li {
 }
 
 a {
-  color: $colr-white;
+  color: #FFFFFF;
   text-decoration: none;
+}
+
+@mixin img($width: 100%, $height: auto) {
+  display: block;
+  width: $width;
+  height: $height;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 7px;
 }

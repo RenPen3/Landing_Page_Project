@@ -1,7 +1,4 @@
-@use 'globals/_index.scss';
-
-$colr-black: #000000;
-$colr-white: #FFFFFF;
+@use 'globals/index';
 
 /* nav */
 .header {
@@ -10,7 +7,7 @@ $colr-white: #FFFFFF;
   right: 0%;
   top: 0%;
   bottom: auto;
-  background: $colr-black;
+  background: index.lib-$colr-black;
   padding:1.2em 0;
   width: 100%;
   z-index: 20;
@@ -61,11 +58,11 @@ $colr-white: #FFFFFF;
   /* hero */
   .hero {
     padding: 7em 2em;
-    background: $colr-black;
+    background: #000000;
 
     &__content {
       text-align: center;
-      color: $colr-white;
+      color: #FFFFFF;
       width: min(100%, 1000px);
       margin-inline: auto;
 
@@ -103,9 +100,7 @@ $colr-white: #FFFFFF;
     }
 
     &__content-btn2 {
-      padding: .5em 1.3em;
-      border-radius: 4px;
-      border:2px solid #fff;
+      @include index.b-btn($clr: #FFFFFF, $bg: #000000);
       // background-image: linear-gradient(90deg, #dec880, #fff 19%, #ff347d 51%, #827ded);
     }
 
@@ -155,7 +150,7 @@ $colr-white: #FFFFFF;
   .layers {
     text-align: center;
     padding:4em;
-    background: $colr-black;
+    background: #000000;
   }
 
   .layers__title {
@@ -229,7 +224,7 @@ $colr-white: #FFFFFF;
   .platform {
     text-align: center;
     padding:4em;
-    background: $colr-black;
+    background: #000000;
 
     &__title {
       // border: 2px solid lime;
@@ -322,4 +317,8 @@ $colr-white: #FFFFFF;
       bottom: 0%;
       z-index: 0;
     }
+  }
+
+  .images {
+    @include index.r-img($width: 600px, $height: 300px);
   }

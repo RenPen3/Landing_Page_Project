@@ -1,3 +1,3 @@
-@import "_btns.scss";
-@import "_reset.scss";
-@import "_colors.scss";
+@forward "reset" as r-*;
+@forward "btns" as b-*;
+@forward "library" as lib-*;
