@@ -235,7 +235,7 @@ a {
 .platform {
   text-align: center;
   padding: 4em;
-  background: #000000;
+  background: #111111;
 }
 .platform__title h2 {
   font-size: 3.1em;
@@ -306,6 +306,32 @@ a {
 .platform__content-right-image__03 {
   bottom: 0%;
   z-index: 0;
+}
+
+.access {
+  padding: 3em;
+  background: #000000;
+}
+.access h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+.access p {
+  margin-bottom: 3em;
+}
+.access__content {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+.access__content-left {
+  width: 50%;
+}
+.access__content-right {
+  width: 50%;
+}
+
+.access__content-images {
+  display: flex;
 }
 
 .images {

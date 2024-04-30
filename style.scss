@@ -224,7 +224,7 @@
   .platform {
     text-align: center;
     padding:4em;
-    background: #000000;
+    background: #111111;
 
     &__title {
       // border: 2px solid lime;
@@ -317,6 +317,38 @@
       bottom: 0%;
       z-index: 0;
     }
+  }
+
+  // Access
+  .access {
+    padding: 3em;
+    background: #000000;
+
+    & h2 {
+      font-size: 2.5em;
+      margin-bottom: .5em;
+    }
+
+    & p {
+      margin-bottom: 3em;
+    }
+
+    &__content {
+      width: min(90%, 1200px);
+      margin-inline: auto;
+    }
+
+    &__content-left {
+      width: 50%;
+    }
+
+    &__content-right {
+      width: 50%;
+    }
+  }
+
+  .access__content-images {
+    display: flex;
   }
 
   .images {
