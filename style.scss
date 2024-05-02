@@ -402,6 +402,62 @@
     z-index: 2;
   }
 
+
+  // Payment Section
+  .payment {
+    padding: 6em 0;
+    text-align: center;
+    background: #000000;
+
+    &__title {
+      font-size: 3em;
+      padding: 1em 0;
+    }
+  }
+
+  .payment__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    // gap: 2em;
+    width: min(90%, 1350px);
+    margin-inline: auto;
+    margin-top: 3em;
+
+    &-left {
+      width: 45%;
+      height: 70dvh;
+      border-radius: 20px;
+      background: #222222;
+      padding: 3em;
+
+      & h2 {
+        font-size: 3.250em;
+      }
+
+      &-card {
+        display: flex;
+      }
+    }
+
+
+    &-right {
+      text-align: left;
+      width: 45%;
+      // height: 70dvh;
+      border-radius: 20px;
+
+      & h2 {
+        font-size: 2.5em;
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    }
+  }
+
   .images {
     @include index.r-img($width: 600px, $height: 300px);
   }
