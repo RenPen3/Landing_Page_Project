@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Project</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
   </head>
 
   <body>
     <header>
       <nav class="header">
         <div class="header__content">
+
           <div class="header__logo">
             <a href="#"><img
                 src="https://assets.website-files.com/62bc1260fe7b1f3d37a8ea01/62bc142251c61c394c38cb19_Vancouver%20Logo.svg"
@@ -31,25 +33,26 @@
             </ul>
           </div>
 
-          <div class="header__nav-icons" style="display: none;">
-            <a href="#">
-              <div class="lines line1"></div>
-              <div class="lines line2"></div>
-              <div class="lines line3"></div>
-            </a>
-          </div>
+          <!-- <div> -->
+          <a class="header__nav-icons" href="#">
+            <div class="header__nav-lines header__nav-line1"></div>
+            <div class="header__nav-lines header__nav-line2"></div>
+            <div class="header__nav-lines header__nav-line3"></div>
+          </a>
+          <!-- </div> -->
         </div>
       </nav>
-      <div class="mobile__menu" style="display: none;">
-        <ul style="line-height: 56px;">
-          <li><a href=" #">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Sign in</a></li>
-          <li><a class="header__nav-btn" href="#">Buy for $24</a></li>
-        </ul>
-      </div>
+
     </header>
+    <div class="mobile__menu">
+      <ul class="mobile__menu-nav">
+        <li><a href=" #">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a class="header__nav-btn" href="#">Buy for $24</a></li>
+      </ul>
+    </div>
 
     <main>
       <section id="hero">
@@ -63,11 +66,9 @@
               <div>
                 <a href="#" class="btns">Buy for $24&nbsp;></a>
               </div>
-              <!-- <div> -->
               <a href="#" class="hero__content-btn2">
                 <div>Learn More</div>
               </a>
-              <!-- </div> -->
             </div>
             <div class="hero__content-dashboard">
               <img class="hero__content-img1"
@@ -133,9 +134,7 @@
                   alt="icon 10">
               </div>
             </div>
-            <!-- <div class=""> -->
             <small>Trusted by Top-tier product campanies</small>
-            <!-- </div> -->
           </div>
         </div>
       </section>
@@ -243,7 +242,7 @@
         </div>
       </section>
 
-      <section id="platform">
+      <!-- <section id="platform">
         <div class="platform">
           <div class="platform__title">
             <h2>All in one platform, from mobile to desktop everything you need is here</h2>
@@ -304,7 +303,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="access" id="Access">
         <div class="access__content">
