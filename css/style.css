@@ -523,6 +523,38 @@ a {
   border-radius: 7px;
 }
 
+/* CONNECT */
+.connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 6em 2em;
+  background: #000000;
+}
+.connect h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+.connect__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(90%, 1444px);
+  margin-inline: auto;
+}
+.connect__content-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  padding: 8px;
+  border-radius: 50px;
+  background: rgb(42, 42, 42);
+}
+
 @media (max-width: 991px) {
   .header__nav-menu {
     display: none;

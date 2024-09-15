@@ -577,6 +577,42 @@
     @include index.r-img($width: 600px, $height: 300px);
   }
 
+  /* CONNECT */
+  .connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 6em 2em;
+    background: #000000;
+
+    & h2 {
+      font-size: 3em;
+      margin-bottom: 1em;
+    }
+
+    &__content {
+      display: flex;
+      // grid-template: repeat(2, 1fr) / repeat(10, 1fr);
+      justify-content: space-between;
+      align-items: center;
+      width: min(90%, 1444px);
+      margin-inline: auto;
+    }
+
+    &__content-circles {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 75px;
+      padding: 8px;
+      border-radius: 50px;
+      background:rgb(42, 42, 42);
+    }
+  }
+
 
 
 
