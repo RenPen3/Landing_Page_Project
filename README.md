@@ -28,8 +28,9 @@ This repository contains a Landing Page For A Busines project for my Shopify Dev
 - **HTML5**: Structure of the web pages
 - **CSS3**: Styling and layout
 - **JavaScript**: Minimal interactivity
-- **Shopify Liquid**: Templating language for Shopify
+-- **GSAP**: For advanced animations and transitions
 - **Git**: Version control
+<!-- - **Shopify Liquid**: Templating language for Shopify -->
 
 ## Process
 
