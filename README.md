@@ -12,8 +12,8 @@ This repository contains a Landing Page For A Busines project for my Shopify Dev
 - [Process](#process)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+<!-- - [Contributing](#contributing)
+- [License](#license) -->
 
 ## Features
 
