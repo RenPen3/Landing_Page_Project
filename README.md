@@ -1,4 +1,5 @@
-# Shopify Developer Portfolio | Project #1
+# Shopify Developer Portfolio 
+### Landing Page For A Business - Project #1
 
 ## Overview
 
