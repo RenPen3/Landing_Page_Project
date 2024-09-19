@@ -50,4 +50,4 @@ To clone this repository and set it up locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/shopify-portfolio.git
+   git clone https://github.com/RenPen3/Landing_Page_Project.git
