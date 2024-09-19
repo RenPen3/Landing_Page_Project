@@ -5,7 +5,7 @@
 
 This repository contains a Landing Page For A Busines project for my Shopify Developer portfolio, inspired by the Vancouver Template found on _[OnePageLove](https://onepagelove.com/vancouver)_. I chose this template for its elegant simplicity, clean design, and minimal animations, making it an ideal showcase for my skills and projects.
 
-<!-- ## Table of Contents
+## Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -13,7 +13,7 @@ This repository contains a Landing Page For A Busines project for my Shopify Dev
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license) -->
+- [License](#license)
 
 ## Features
 
