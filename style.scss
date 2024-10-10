@@ -86,6 +86,7 @@
 
   /* hero */
   .hero {
+    text-align: center;
     padding: 7em 2em;
     background: #000000;
 
@@ -96,6 +97,7 @@
       margin-inline: auto;
 
     }
+
 
     & h1 {
       font-size: 4.875em;
@@ -160,17 +162,20 @@
       border-radius: 7px;
     }
 
-    &__content-icons {
+    &__content-icons-container {
       margin-top: 3em;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
       padding: 1em;
       // border:2px solid lightgrey;
     }
 
     &__content-icon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: min(98%, 1200px);
+      margin-inline: auto;
       padding: 1em;
+      margin-bottom: 1em;
       // border:2px solid dodgerblue;
     }
   }
@@ -442,13 +447,16 @@
       text-align: center;
       font-size: 3em;
       padding: 1em 0;
+
     }
 
     &__left-payment {
-      width: 320px;
-      height: 370px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // width: 80%;
+      // height: 370px;
       margin-inline: auto;
-      border: 2px solid lime;
 
       & h1 {
         text-align: left;
@@ -458,12 +466,9 @@
     
     & h2 {
       font-size: 3em;
+      text-align: center;
     }
 
-    & small {
-      font-size: 1.2em;
-      color: #9F9F9F;
-    }
     &__left-number {
       font-size: 12em;
       font-weight: 900;
@@ -479,13 +484,15 @@
     margin-inline: auto;
     margin-top: 3em;
 
+   
+
     &-left {
       width: 45%;
-      line-height: 60px;
+      // line-height: 60px;
       border-radius: 20px;
       background: #171717;
       padding: 3em;
-    border: 2px solid lime;
+      // border: 2px solid red;
 
 
       & h1 {
@@ -502,10 +509,23 @@
         height: 100%;
       }
 
+
+      .payment__left-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 430px;
+      }
+
       &__left-number {
         font-size: 3em;
       } 
+
+      
     }
+
+  
     
 
     &__left-btns {
@@ -565,12 +585,9 @@
         font-weight: 400;
         line-height: 1.2;
         margin: 1.5em 0;
-
       }
 
-    }
-
-    
+    }   
   }
 
   .images {
@@ -807,8 +824,12 @@
     }
 
     .hero__content-icons {
-      display: block;
-    }
+    // margin-top: 3em;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    // padding: 6em;
+  }
 
     .hero h1 span {
       font-size: 2rem;
@@ -831,5 +852,8 @@
       width: 24px;
       height: 3px;
     }
+
+    .hero__content-img1 {display: none;}
+    .hero__content-img3 {display: none;}
     
   }
