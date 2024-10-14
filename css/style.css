@@ -216,10 +216,10 @@ a {
   font-size: 3.1em;
   line-height: 60px;
 }
-.layers__title__title-p {
+.layers__title p {
   padding-top: 0.5em;
   font-size: 1.125em;
-  color: #ff0000;
+  color: #9F9F9F;
   width: 700px;
   margin-inline: auto;
   line-height: 24px;
@@ -242,10 +242,14 @@ a {
 .layers__content-left h2 {
   font-size: 2.5em;
   margin: 0.5em 0 0.5em 0;
+  line-height: 48px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
-.layers__content-left__content-left-p {
+.layers__content-left-p {
   font-size: 1.2em;
-  color: #FFFFFF;
+  color: #9F9F9F;
+  line-height: 24px;
 }
 
 .layers__content-list {
@@ -267,6 +271,9 @@ a {
   display: flex;
   align-items: center;
 }
+.layers__content-split p {
+  font-size: 1.125em;
+}
 
 .layers__content-right {
   width: 50%;
@@ -277,16 +284,25 @@ a {
 
 /* Platform */
 .platform {
+  height: 100vh;
   text-align: center;
   padding: 4em;
   background: #111111;
 }
+.platform__title {
+  position: sticky;
+}
 .platform__title h2 {
   font-size: 3.1em;
+  line-height: 60px;
 }
 .platform__title p {
   padding-top: 0.5em;
-  font-size: 1.2em;
+  font-size: 1.125em;
+  color: #9F9F9F;
+  width: 700px;
+  margin-inline: auto;
+  line-height: 24px;
 }
 
 .platform__content {
@@ -306,22 +322,29 @@ a {
 .platform__content-left h2 {
   font-size: 2.5em;
   margin: 0.5em 0 0.5em 0;
+  line-height: 48px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
-.platform__content-left p {
+.platform__content-left-p {
   font-size: 1.2em;
+  color: #9F9F9F;
+  line-height: 24px;
 }
 
 .platform__content-list {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 4em;
+  line-height: 40px;
 }
 .platform__content-list ul {
   padding-left: 0;
 }
 .platform__content-list img {
   width: 24px;
+  margin-right: 1.2em;
 }
 
 .platform__content-split {
@@ -330,10 +353,11 @@ a {
 }
 
 .platform__content-right {
+  position: relative;
   width: 60%;
 }
 .platform__content-right img {
-  bottom: 0;
+  position: absolute;
   display: inline-block;
   border-radius: 21px;
   max-width: 100%;
