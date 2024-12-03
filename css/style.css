@@ -21,22 +21,22 @@ a {
 }
 
 .btns {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   background: #FFFFFF;
   color: #000000;
-  border: 2px solid #FFFFFF;
   border-radius: 7px;
-  padding: 0.5em 1.5em;
+  width: 160px;
+  height: 44px;
+  cursor: pointer;
+  /* padding: 0.5em 1.5em; */
   transition: all 0.4s ease-in-out;
 }
 .btns:hover {
-  cursor: pointer;
-  background: #e6e5e5;
+  background: #dddddd;
   color: #000000;
-  border: 2px solid #FFFFFF;
-  border-radius: 7px;
-  padding: 0.5em 1.5em;
-  transition: all 0.4s ease-in-out;
 }
 
 /* nav */
@@ -56,7 +56,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-inline: auto;
-  width: min(90%, 1444px);
+  width: min(90%, 1350px);
 }
 .header__logo {
   font-size: 1.8em;
@@ -71,6 +71,17 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 2em;
+}
+.header__nav-menu .header__nav-link {
+  font-size: 1.2rem;
+  color: #FAFAFA;
+  padding-bottom: .2rem;
+  border-bottom: 1px solid transparent;
+  transition: all .4s ease-in-out;
+}
+.header__nav-menu .header__nav-link:hover {
+  color: #999999;
+  border-bottom: 1px solid #999999;
 }
 .header__sign {
   display: flex;
@@ -128,6 +139,7 @@ a {
 .hero h1 {
   font-size: 4.875em;
   line-height: 100px;
+  width: 1250px;
 }
 .hero span {
   font-size: 72px;
@@ -154,13 +166,27 @@ a {
   margin-top: 4em;
 }
 .hero__content-btn2 {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  background: #000000;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 7px;
+  width: 150px;
+  height: 44px;
+  cursor: pointer;
+  /* padding: 0.5em 1.5em; */
+  transition: all 0.4s ease-in-out;
+
+  /* cursor: pointer;
   background: #000000;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
   border-radius: 7px;
   padding: 0.5em 1.5em;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; */
 }
 .hero__content-dashboard {
   position: relative;
@@ -286,15 +312,16 @@ a {
 .platform {
   height: 100vh;
   text-align: center;
-  padding: 4em;
+  padding: 6rem 4em;
   background: #111111;
-}
-.platform__title {
-  position: sticky;
 }
 .platform__title h2 {
   font-size: 3.1em;
   line-height: 60px;
+  width: 1300px;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 1rem;
 }
 .platform__title p {
   padding-top: 0.5em;
@@ -349,6 +376,7 @@ a {
 
 .platform__content-split {
   display: flex;
+  align-items: center;
   padding: 0.5em 0;
 }
 
@@ -358,7 +386,7 @@ a {
 }
 .platform__content-right img {
   position: absolute;
-  display: inline-block;
+  display: none;
   border-radius: 21px;
   max-width: 100%;
   vertical-align: middle;
@@ -587,13 +615,12 @@ a {
   width: min(90%, 1444px);
   margin-inline: auto;
 }
-.connect__content-circles {
+.connect__content-circles img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 75px;
   height: 75px;
-  padding: 8px;
   border-radius: 50px;
   background: rgb(42, 42, 42);
 }
@@ -609,7 +636,7 @@ a {
   height: 500px;
   margin-inline: auto;
   border-radius: 20px;
-  background: #222222;
+  background: lime;
   overflow: hidden;
 }
 .grid__content-item {
@@ -619,10 +646,19 @@ a {
   width: 100%;
   height: 100%;
   padding: 3em;
+  background: #191919;
   border-bottom: 0.1px solid #565656;
   border-right: 0.1px solid #565656;
 }
+
+.grid__content-item img {
+  position: absolute;
+  top: -60px;
+  right: 0;
+
+}
 .grid__content-item h2 {
+  position: relative;
   font-size: 3em;
   font-weight: 400;
   margin-bottom: 0.3em;
