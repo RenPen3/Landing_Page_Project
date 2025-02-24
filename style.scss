@@ -128,7 +128,10 @@
       justify-content: center;
       align-items: center;
       gap: 2em;
-      margin-top:4em;    
+      margin-top:4em;  
+      & .fa-arrow-right {
+        font-size: 1.1rem;
+      }  
     }
 
     &__content-btn2 {
@@ -657,17 +660,16 @@
       // grid-template: repeat(2, 1fr) / repeat(10, 1fr);
       justify-content: space-between;
       align-items: center;
-      width: min(90%, 1444px);
+      width: min(90%, 1350px);
       margin-inline: auto;
     }
 
-    &__content-circles {
+    &__content-circles img {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 75px;
       height: 75px;
-      padding: 8px;
       border-radius: 50px;
       background:rgb(42, 42, 42);
     }
@@ -719,7 +721,7 @@
   }
   
   .footer {
-    padding: 5em 0;
+    padding: 5rem 0 1rem 0;
     background: #000000;
 
     &__content-divider {
@@ -739,10 +741,10 @@
     }
 
     &__content1-left {
-      width: 70%;
+      width: 65%;
 
       & h2 {
-        font-size: 3.5em;
+        font-size: 3.25em;
         font-weight: 600;
       }
     }
